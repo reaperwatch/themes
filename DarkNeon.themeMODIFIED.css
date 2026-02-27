@@ -62,22 +62,9 @@
   --background-brightness: 100%;
 }
 
-/* Adds a glowing light bar to the selected channel 
-.channelTextArea_f75fb0 .channelTextArea__74017 {
-  background: rgba(
-    var(--rgb-highlight),
-    0.15
-  ) !important; /* Light glow background 
-  border-left: 3px solid rgb(var(--rgb-highlight)) !important; /* The vertical "light bar" on the left 
-  box-shadow: 0 0 10px rgba(var(--rgb-highlight), 0.2); /* Soft outer glow 
-}*/
-/*
-.replyBar__841c8 {
-  background: rgba(
-    var(--rgb-background),
-    1
-  ) !important; /* Light glow background 
-}*/
+.icon_c9d15c path {
+  fill: rgb(var(--rgb-online-color));
+}
 
 .typingDots_b88801 {
   /* makes typing chat anims have a slight background for readablity */
