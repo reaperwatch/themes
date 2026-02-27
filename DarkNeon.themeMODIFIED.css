@@ -1,0 +1,531 @@
+/**
+ * @name Dark Neon
+ * @author Bates
+ * @version 3.0.0
+ * @source https://gitlab.com/B4T3S/bates-discord-theme
+ * @website https://B4T3S.gitlab.io/bates-discord-theme/
+ * @donate https://www.paypal.com/paypalme/floriancegledi
+ * @patreon https://patreon.com/bates
+ * @description A dark theme with bright neon-y colors, now with more options!
+ * @authorId 137259132305539072
+ * @invite 6qd3SkP6Ch
+ * @MODIFIED by slashing__moon on discord!!! credits go to the original creator!!
+*/
+
+@import url("https://B4T3S.github.io/DiscordDarkNeon/mainRewrite.css");
+/* ^ This is the main Import ^ DO NOT TOUCH. Without this, the theme won't load!!! */
+
+@import url("https://B4T3S.github.io/DiscordDarkNeon/css/hideUsers.css");
+/* This import adds the collapsible user-list. Remove it/comment it out to disable that feature */
+
+/* Imports the font from Google Fonts "Rajdhani" */
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap");
+
+@import url("https://raw.githubusercontent.com/Benzeel/Bennys-Css-Snippets/refs/heads/main/TransparentMessagebox.css");
+
+@import url("https://raw.githubusercontent.com/Benzeel/Bennys-Css-Snippets/refs/heads/main/ImageViewerTweaks.css");
+
+[class^="sidebarResizeHandle"] {
+  display: none;
+}
+
+/* CUSTOMIZE COLORS AND FONTS IN HERE! */
+:root,
+.visual-refresh,
+.visual-refresh.theme-dark {
+  --font-primary: "Rajdhani", sans-serif; /* change the font here! */
+  --rgb-highlight: 0, 100, 180; /* darker blue */
+  --rgb-background: 11, 20, 32; /* Deep navy-black background */
+  --rgb-text: 173, 186, 199; /* Soft grey-blue text color */
+  --rgb-close-button: 240, 98, 146; /* Pastel pink accent color */
+  --rgb-online-color: 0, 100, 180; /* Even darker blue per user request */
+  --rgb-afk-color: 255, 255, 51; /* Default idle */
+  --rgb-dnd-color: 255, 0, 0; /* Default dnd */
+  --rgb-streaming-color: 188, 19, 254; /* Default streaming */
+  --transition-time: 0.3s;
+  --background-image: unset;
+  --background-position: center;
+  --background-size: cover;
+  --background-blur: 5px;
+  --background-brightness: 100%;
+}
+
+/* Adds a glowing light bar to the selected channel 
+.channelTextArea_f75fb0 .channelTextArea__74017 {
+  background: rgba(
+    var(--rgb-highlight),
+    0.15
+  ) !important; /* Light glow background 
+  border-left: 3px solid rgb(var(--rgb-highlight)) !important; /* The vertical "light bar" on the left 
+  box-shadow: 0 0 10px rgba(var(--rgb-highlight), 0.2); /* Soft outer glow 
+}*/
+/*
+.replyBar__841c8 {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background 
+}*/
+
+.typingDots_b88801 {
+  /* makes typing chat anims have a slight background for readablity */
+  background: rgba(var(--rgb-highlight), 0.15) !important; /* Light glow bar */
+  border-radius: 40px !important;
+  margin-right: 80% !important;
+}
+.stackedBars__74017 {
+  background: rgba(var(--rgb-highlight), 0.1) !important; /* Light glow bar */
+}
+
+/* Changes text color of the selected channel to be brighter */
+.modeSelected_d808b0 .name_d808b0 {
+  color: #ffffff !important;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(var(--rgb-highlight), 0.5);
+}
+
+/* Adds a subtle bar when hovering over channels */
+.wrapper_d808b0:hover .link_d808b0 {
+  background: rgba(var(--rgb-highlight), 0.05) !important;
+  border-left: 3px solid rgba(var(--rgb-highlight), 0.5) !important;
+}
+
+/* Adds the vertical bar/border to the left of the chat content */
+.content_f75fb0 {
+  border-left: 2px solid rgba(var(--rgb-highlight), 0.4) !important;
+  /*margin-left: 8px !important; /* This creates the physical gap "bar" */
+  box-shadow: -4px 0 10px -4px rgba(var(--rgb-highlight), 0.2); /* Adds a slight glow to the bar */
+}
+
+/* Ensures the sidebar doesn't look cut off next to the new bar */
+.sidebar_a4d651 {
+  border-right: none !important;
+}
+
+/* Ensures the container doesn't clip the new border/glow */
+.content_f75fb0 {
+  overflow: -moz-hidden-unscrollable !important;
+}
+
+/* Make chat gradient nearly invisible to blend with background */
+.chatGradient__36d07,
+.chatGradientBase__36d07 {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(0, 0, 0, 0.02)
+  ) !important;
+  background-color: transparent !important;
+  pointer-events: none !important;
+  mix-blend-mode: normal !important;
+  transition: background 0.3s ease !important;
+}
+
+.peopleColumn__133bf {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background */
+}
+
+.container__7d20c.refresh-active-now {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background */
+}
+
+.shop__08415 {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background */
+}
+.theme-dark.images-dark.headerBar__80679.container__9293f.themed__9293f {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background */
+}
+.contentSection_b6bcee {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background */
+}
+.container__60f82 {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background */
+}
+.scroller__23746.thin_d125d2.scrollerBase_d125d2 {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background */
+}
+.inventoryWrapper__1feb0 {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background */
+}
+.filterBar__1feb0.thin_d125d2.scrollerBase_d125d2 {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background */
+}
+.filterBar__11877 {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background */
+}
+.shopScroll__1feb0.auto_d125d2.scrollerBase_d125d2 {
+  background: rgba(
+    var(--rgb-background),
+    1
+  ) !important; /* Light glow background */
+}
+
+.mentioned__5126c {
+  background: rgba(
+    var(--rgb-highlight),
+    0.1
+  ) !important; /* Light glow mention color */
+}
+
+small {
+  color: rgba(
+    var(--rgb-online-color),
+    0.8
+  ) !important; /* Slightly dimmed text for small elements */
+}
+
+/* translucent settings menu by benzeel V2 */
+/* ------ SETTINGS MENU START ------ */
+/* note by moon: this MAY be peformace intesive, remove/comment it if needed*/
+/* settings menu scroll shadow */
+.fixedContent__409aa:after {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+/* settings menu main BG */
+.content_e9e3ed {
+  background: #00000046;
+}
+.contentHeader_e9e3ed {
+  background: transparent !important;
+}
+/* Security Keys BG */
+.credentialItem__6c75d {
+  background: none;
+}
+.credentialItem__6c75d:is(:first-child) {
+  border: 0px;
+}
+.credentialList__6c75d {
+  background: #0c0c0c83;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+}
+/* krisp bg */
+.card__73069:not(.outline__73069) {
+  background: none;
+}
+/* keybinding bgs */
+.defaultKeybindGroup__740f2 {
+  background: #2b2a2a63;
+}
+/* vencord quick actions */
+.vc-card-base {
+  background: none;
+}
+.vc-settings-quickActions-pill {
+  background: #55555571;
+}
+.vc-settings-quickActions-pill:hover {
+  background: #7e7e7e71;
+}
+/* Plugins */
+.vc-addon-card {
+  background: none;
+}
+/* server boosts */
+.appliedBoostContainer_ceb06a {
+  background: none;
+  border: 1px solid var(--border-subtle);
+}
+.guildContainer__5dba5 {
+  background: #3d3d3d52;
+}
+.boostContainer_ceb06a {
+  background: #141414a1;
+}
+/* server boost faq */
+.wrapper__5b98e {
+  background: #3d3d3d52;
+}
+/* Share nitro */
+.expandedProgressBarContainerSettingsPage_a61c56 {
+  background: none;
+  backdrop-filter: none;
+}
+/* my account */
+.accountProfileCard__1fed1 {
+  background: #03030333;
+  border: 1px solid var(--border-subtle);
+}
+.background__1fed1 {
+  background: #1818183b;
+  border: 1px solid var(--border-subtle);
+}
+.fieldList__1fed1 {
+  background: none;
+}
+/* appearance */
+.cardPrimary__73069,
+.cardPrimary__73069.editable__73069 {
+  background: #03030356;
+}
+
+/* "view reactions" popup & settings menu (for some reason)*/
+.container__8a031 {
+  background: #14141494;
+  backdrop-filter: blur(10px);
+}
+
+/* ------ END OF SETTINGS MENU ------ */
+
+/* Created by Computer Cat, Maintained by Benzeel*/ /*v10.1*/
+/*https://raw.githubusercontent.com/Benzeel/Bennys-Css-Snippets/refs/heads/main/TransparentMessagebox.css*/
+
+/* ---- v transparent messagebox v ---- */
+form.formWithLoadedChatInput_f75fb0 {
+  margin-top: -51vh;
+} /* Eat message area's space */
+div.messagesWrapper__36d07 > div.jumpToPresentBar__0f481 {
+  bottom: 52vh;
+} /* Fix new messages bar*/
+div.messagesWrapper__36d07 > form, /* New messages bar */
+div.autocomplete__13533, /* Emojis and stuff */
+div.channelTextArea_f75fb0::before, div.wrapper__44df5 {
+  /* actual text area */
+  backdrop-filter: blur(10px); /* Configure blur amount here */
+}
+
+div.autocompleteInner__13533 {
+  background-color: #00000023;
+}
+
+div.channelTextArea_f75fb0 {
+  /* actual text area overrides */
+  position: relative;
+  background: transparent !important;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  } /* Set up blur */
+  > * {
+    position: relative;
+  } /* Fix some stuff */
+  > div.autocomplete__13533 {
+    position: absolute;
+  } /* Override commands and emoji menu format */
+  > * {
+    background: 0 0 !important;
+  } /* Text area's internals excluding emojis and commands */
+}
+
+.chat_f75fb0 {
+  overflow: clip;
+} /* fix chat bar issues with jumping up */
+ol.scrollerInner__36d07::after {
+  /* Add spacer for the bottom*/
+  display: block;
+  content: "";
+  position: relative;
+  height: 50vh;
+}
+
+div.floatingBars__74017 {
+  .banner__183e8 {
+    background: 0 0;
+  }
+} /* Override for new member steps */
+div.wrapper__44df5 {
+  background: 0 0;
+} /* Override for follow channel */
+
+.chatTypingGradientAtBottom__36d07,
+.chatGradient__36d07,
+.chatGradientBase__36d07 {
+  /* hide typing gradient */
+  display: none !important;
+}
+/* ---- ^ transparent messagebox ^ ---- */
+
+/* fix & thin out scrollbar */
+.managedReactiveScroller_d125d2,
+.scroller__36d07 {
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: var(
+      --scrollbar-thin-thumb
+    ); /*change this to change scrollbar colour*/
+    border: 2px solid transparent;
+    border-radius: 6px;
+  }
+  &:hover::-webkit-scrollbar-track,
+  &:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+  &::-webkit-scrollbar-button:end:increment {
+    height: 35%;
+  }
+  &:hover::-webkit-scrollbar-track {
+    background-color: #3f3f3f6e;
+  }
+}
+
+/* User Area not going over server list */
+
+[class^="sidebar"] {
+  &::after {
+    display: none;
+  }
+  > [class^="wrapper"] {
+    mask: unset;
+    margin-bottom: unset;
+    > [class^="unreadMentionsIndicatorBottom"] {
+      padding-bottom: var(--space-xs);
+    }
+    > [class^="tree"] > [class^="itemsContainer"] > [class^="stack"] {
+      padding: var(--space-xs) 0;
+    }
+  }
+  > [class^="panels"] {
+    bottom: 0;
+    border: unset;
+    border-radius: unset;
+    --custom-panels-spacing: unset;
+    left: var(--custom-guild-list-width);
+    width: calc(100% - var(--custom-guild-list-width));
+    > [class^="mask"] {
+      display: none;
+    }
+    > [class^="panel"] {
+      margin: 8px 8px 0px;
+      padding: 0px 0px 7px;
+      border-radius: unset;
+      border-bottom: 1px solid var(--border-muted);
+    }
+    > [class^="wrapper"] {
+      margin: unset;
+      > [class^="container"] {
+        margin: 8px 8px 0px;
+        padding-bottom: 8px;
+        > [class^="flex"] {
+          height: unset;
+          > [class^="inner"] {
+            height: unset;
+            > [class^="rtcConnectionStatusWrapper"] {
+              height: unset;
+              > [class^="rtcConnectionStatus"] {
+                gap: 4px;
+                height: unset;
+                > [class^="clickablePing"] {
+                  > [class^="ping"] {
+                    margin: unset;
+                    padding: unset;
+                    background: unset;
+                    box-shadow: unset;
+                    border-radius: unset;
+                  }
+                }
+              }
+            }
+          }
+          > [class^="flex"] {
+            margin-left: 4px;
+            > [class^="button"]:first-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    > [class^="container"] {
+      gap: 4px;
+      height: unset;
+      margin: unset;
+      padding: unset;
+      align-items: unset;
+      flex-direction: column-reverse;
+      > [class^="accountPopoutButtonWrapper"] {
+        padding: 4px;
+        border-radius: 8px;
+        margin: 4px 8px 8px;
+        > [class^="wrapper"]
+          > [class^="mask"]
+          > foreignObject
+          > [class^="avatarStack"]
+          > [class^="avatar"] {
+          content: var(--avatar-url-128);
+        }
+        > [class^="nameTag"] {
+          > [class^="panelTitleContainer"] > [class^="text-md/medium"] {
+            font-size: unset;
+          }
+          > [class^="panelSubtextContainer"]
+            > [class^="text-xs/medium"]
+            > [class^="hoverRoll"]
+            > [class^="default"]
+            > [class^="container"] {
+            > [class^="text-xs/medium"] {
+              line-height: unset;
+            }
+            > [class^="container"] > [class^="text-xs/medium"] {
+              line-height: unset;
+            }
+          }
+        }
+      }
+      > [class^="buttons"] {
+        gap: unset;
+        margin-top: 8px;
+        justify-content: space-evenly;
+        > [class^="micButtonParent"] > [class^="button"] {
+          border-radius: var(--radius-sm);
+          &:not(:first-of-type) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Apply the font to all of Discord to everything EXCEPT the Nitro username fonts (ignore this old block)
+*:not([class*="dnsFont"]):not([class*="neoCastel"]):not(
+    [data-username-with-effects]
+  ):not([class*="pixelify"]):not([class*="sinistre"]):not(
+    [class*="museoModerno"]
+  ):not([class*="zillaSlab"]):not([class*="cherryBomb"]):not(
+    [class*="chicle"]
+  ) {
+  font-family: "Rajdhani", sans-serif !important;
+}*/
