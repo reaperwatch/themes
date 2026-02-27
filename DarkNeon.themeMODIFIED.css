@@ -72,6 +72,21 @@
   background-color: rgb(var(--rgb-online-color)) !important;
 }
 
+[aria-label*="Online"] rect[fill="#45a366"],
+[aria-label*="Online"] rect[mask*="status-online"] {
+  fill: rgb(var(--rgb-online-color)) !important;
+}
+
+[aria-label*="Idle"] rect[fill="#f0b232"],
+[aria-label*="Idle"] rect[mask*="status-idle"] {
+  fill: rgb(var(--rgb-afk-color)) !important;
+}
+
+[aria-label*="Do Not Disturb"] rect[fill="#f04747"],
+[aria-label*="Do Not Disturb"] rect[mask*="status-dnd"] {
+  fill: rgb(var(--rgb-dnd-color)) !important;
+}
+
 .typingDots_b88801 {
   /* makes typing chat anims have a slight background for readablity */
   background: rgba(var(--rgb-highlight), 0.15) !important; /* Light glow bar */
