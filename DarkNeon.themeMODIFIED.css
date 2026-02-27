@@ -9,6 +9,7 @@
  * @description A dark theme with bright neon-y colors, now with more options!
  * @authorId 137259132305539072
  * @invite 6qd3SkP6Ch
+ *!!!!!!!!!!!!!!!!!!!!
  * @MODIFIED by slashing__moon on discord!!! credits go to the original creator!!
 */
 
@@ -35,17 +36,6 @@
     opacity: 1;
   }
 }
-
-/* uncomment if the user area is broken */
-/*
-.panels__5e434 {
-    width: calc(100% - var(--custom-panels-spacing) * 2 - var(--custom-guild-list-width) - 1px);
-    transition: width 0.25s ease-in-out;
-}
-.guilds__5e434:hover ~ .panels__5e434 {
-    width: calc(100% - var(--custom-panels-spacing) * 2);
-}
-*/
 
 [class^="sidebarResizeHandle"] {
   display: none;
@@ -321,108 +311,6 @@ small {
 
 /* ------ END OF SETTINGS MENU ------ */
 
-/* Created by Computer Cat, Maintained by Benzeel*/ /*v10.1*/
-/*https://raw.githubusercontent.com/Benzeel/Bennys-Css-Snippets/refs/heads/main/TransparentMessagebox.css*/
-
-/* ---- v transparent messagebox v ---- */
-form.formWithLoadedChatInput_f75fb0 {
-  margin-top: -51vh;
-} /* Eat message area's space */
-div.messagesWrapper__36d07 > div.jumpToPresentBar__0f481 {
-  bottom: 52vh;
-} /* Fix new messages bar*/
-div.messagesWrapper__36d07 > form, /* New messages bar */
-div.autocomplete__13533, /* Emojis and stuff */
-div.channelTextArea_f75fb0::before, div.wrapper__44df5 {
-  /* actual text area */
-  backdrop-filter: blur(10px); /* Configure blur amount here */
-}
-
-div.autocompleteInner__13533 {
-  background-color: #00000023;
-}
-
-div.channelTextArea_f75fb0 {
-  /* actual text area overrides */
-  position: relative;
-  background: transparent !important;
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-  } /* Set up blur */
-  > * {
-    position: relative;
-  } /* Fix some stuff */
-  > div.autocomplete__13533 {
-    position: absolute;
-  } /* Override commands and emoji menu format */
-  > * {
-    background: 0 0 !important;
-  } /* Text area's internals excluding emojis and commands */
-}
-
-.chat_f75fb0 {
-  overflow: clip;
-} /* fix chat bar issues with jumping up */
-ol.scrollerInner__36d07::after {
-  /* Add spacer for the bottom*/
-  display: block;
-  content: "";
-  position: relative;
-  height: 50vh;
-}
-
-div.floatingBars__74017 {
-  .banner__183e8 {
-    background: 0 0;
-  }
-} /* Override for new member steps */
-div.wrapper__44df5 {
-  background: 0 0;
-} /* Override for follow channel */
-
-.chatTypingGradientAtBottom__36d07,
-.chatGradient__36d07,
-.chatGradientBase__36d07 {
-  /* hide typing gradient */
-  display: none !important;
-}
-/* ---- ^ transparent messagebox ^ ---- */
-
-/* fix & thin out scrollbar */
-.managedReactiveScroller_d125d2,
-.scroller__36d07 {
-  &::-webkit-scrollbar {
-    height: 10px;
-    width: 10px;
-  }
-
-  &::-webkit-scrollbar-track,
-  &::-webkit-scrollbar-thumb {
-    visibility: visible;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-clip: padding-box;
-    background-color: var(
-      --scrollbar-thin-thumb
-    ); /*change this to change scrollbar colour*/
-    border: 2px solid transparent;
-    border-radius: 6px;
-  }
-  &:hover::-webkit-scrollbar-track,
-  &:hover::-webkit-scrollbar-thumb {
-    visibility: visible;
-  }
-  &::-webkit-scrollbar-button:end:increment {
-    height: 35%;
-  }
-  &:hover::-webkit-scrollbar-track {
-    background-color: #3f3f3f6e;
-  }
-}
-
 /* User Area not going over server list */
 
 [class^="sidebar"] {
@@ -444,8 +332,15 @@ div.wrapper__44df5 {
     border: unset;
     border-radius: unset;
     --custom-panels-spacing: unset;
-    left: var(--custom-guild-list-width);
-    width: calc(100% - var(--custom-guild-list-width));
+    left: var(--space-8);
+    width: calc(100% - var(--space-8));
+    transition:
+      left 0.25s ease-in-out,
+      width 0.25s ease-in-out;
+    .guilds__5e434:hover ~ & {
+      left: var(--custom-guild-list-width) !important;
+      width: calc(100% - var(--custom-guild-list-width)) !important;
+    }
     > [class^="mask"] {
       display: none;
     }
