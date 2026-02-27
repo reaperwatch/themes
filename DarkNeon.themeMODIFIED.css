@@ -68,6 +68,9 @@
 [style*="color: var(--status-positive)"] {
   color: rgb(var(--rgb-online-color)) !important;
 }
+.status_a423bd {
+  background-color: rgb(var(--rgb-online-color)) !important;
+}
 
 .typingDots_b88801 {
   /* makes typing chat anims have a slight background for readablity */
