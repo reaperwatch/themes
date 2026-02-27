@@ -25,6 +25,28 @@
 
 @import url("https://raw.githubusercontent.com/Benzeel/Bennys-Css-Snippets/refs/heads/main/ImageViewerTweaks.css");
 
+/* only show the server list on hover */
+.guilds__5e434 {
+  width: var(--space-8);
+  transition: 0.25s ease-in-out;
+  opacity: 0;
+  &:hover {
+    width: var(--custom-guild-list-width);
+    opacity: 1;
+  }
+}
+
+/* uncomment if the user area is broken */
+/*
+.panels__5e434 {
+    width: calc(100% - var(--custom-panels-spacing) * 2 - var(--custom-guild-list-width) - 1px);
+    transition: width 0.25s ease-in-out;
+}
+.guilds__5e434:hover ~ .panels__5e434 {
+    width: calc(100% - var(--custom-panels-spacing) * 2);
+}
+*/
+
 [class^="sidebarResizeHandle"] {
   display: none;
 }
