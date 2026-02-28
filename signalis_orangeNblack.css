@@ -50,7 +50,7 @@ body {
 .visual-refresh,
 .visual-refresh.theme-dark {
   --font-primary: "Rajdhani", sans-serif; /* change the font here! */
-  --rgb-highlight: 255, 44, 6;
+  --rgb-highlight: 255, 20, 6;
   --rgb-background: 0, 0, 0;
   --rgb-text: 173, 186, 199;
   --rgb-close-button: 240, 98, 146;
