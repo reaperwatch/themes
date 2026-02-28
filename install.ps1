@@ -1,4 +1,3 @@
-# Force TLS 1.2 for GitHub connection
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 # Configuration
