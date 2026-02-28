@@ -13,7 +13,6 @@ install commands:
 ```
 irm https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.ps1 | iex
 irm https://raw.githubusercontent.com/reaperwatch/themes/main/signalisDark.ps1 | iex
-
 ```
 > (to modifiy the file to your liking use powershell with admin perms) <br> !installs inside appdata/roaming/vencord/themes/!
 
