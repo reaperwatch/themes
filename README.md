@@ -10,9 +10,12 @@ install command:
 ```
 irm https://raw.githubusercontent.com/reaperwatch/themes/main/install.ps1 | iex
 ```
-> (to modifiy the file to your liking use powershell with admin perms) !installs inside appdata/roaming/vencord/themes/!
+> (to modifiy the file to your liking use powershell with admin perms) <br> !installs inside appdata/roaming/vencord/themes/!
 
 online import theme: 
 ```
 @import url("https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css");
 ```
+> put this import inside a css file to get the effects of this theme.
+
+
