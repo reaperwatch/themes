@@ -6,7 +6,7 @@ https://reaperwatch.github.io/themes/DarkNeon.themeMODIFIED.css
 ```
 ![alt text](https://reaperwatch.github.io/themes/imgs/onlinetheme.png)
 
-install command: 
+install command: (to modifiy the file to your liking use powershell with admin perms) !installs inside appdata/roaming/vencord/themes/!
 ```
 irm https://raw.githubusercontent.com/reaperwatch/themes/main/install.ps1 | iex
 ```
