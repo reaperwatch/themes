@@ -1,5 +1,5 @@
 /**
- * @name Dark Neon
+ * @name Dark Neon(signalis inspired mod)
  * @author Bates
  * @version 3.0.0
  * @source https://gitlab.com/B4T3S/bates-discord-theme
@@ -42,19 +42,21 @@
 [class^="sidebarResizeHandle"] {
   display: none;
 }
-
+body {
+  color: rgb(255, 44, 6);
+}
 /* CUSTOMIZE COLORS AND FONTS IN HERE! */
 :root,
 .visual-refresh,
 .visual-refresh.theme-dark {
   --font-primary: "Rajdhani", sans-serif; /* change the font here! */
-  --rgb-highlight: 0, 100, 180; /* darker blue */
-  --rgb-background: 11, 20, 32; /* Deep navy-black background */
-  --rgb-text: 173, 186, 199; /* Soft grey-blue text color */
-  --rgb-close-button: 240, 98, 146; /* Pastel pink accent color */
-  --rgb-online-color: 0, 100, 180; /* darker blue */
+  --rgb-highlight: 255, 44, 6;
+  --rgb-background: 0, 0, 0;
+  --rgb-text: 173, 186, 199;
+  --rgb-close-button: 240, 98, 146;
+  --rgb-online-color: 255, 44, 6; /* darker blue */
   --rgb-afk-color: 255, 255, 51; /* Default idle */
-  --rgb-dnd-color: 255, 0, 0; /* Default dnd */
+  --rgb-dnd-color: 254, 0, 0; /* Default dnd */
   --rgb-streaming-color: 188, 19, 254; /* Default streaming */
   --transition-time: 0.3s;
   --background-image: unset;

@@ -11,7 +11,7 @@ https://reaperwatch.github.io/themes/DarkNeon.themeMODIFIED.css
 
 install command: 
 ```
-irm https://raw.githubusercontent.com/reaperwatch/themes/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.ps1 | iex
 ```
 > (to modifiy the file to your liking use powershell with admin perms) <br> !installs inside appdata/roaming/vencord/themes/!
 
