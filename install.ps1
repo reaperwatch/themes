@@ -1,3 +1,4 @@
+# TLS 1.2 for GitHub connection
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 # Configuration
@@ -15,12 +16,10 @@ if (!(Test-Path $vencordDir)) {
     return 
 }
 
-# Ensure themes folder exists inside Vencord
-if (-not (Test-Path -Path $themeDir)) {
-    Write-Host "Themes folder not found. Creating it now..." -ForegroundColor Gray
-    New-Item -ItemType Directory -Path $themeDir | Out-Null
+# Ensure themes folder exists
+if (!(Test-Path $themeDir)) {
+    New-Item -ItemType Directory -Path $themeDir -Force | Out-Null
 }
-
 
 # Download the theme
 try {
