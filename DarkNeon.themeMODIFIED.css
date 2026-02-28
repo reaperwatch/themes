@@ -67,15 +67,8 @@
 .icon_c9d15c path {
   fill: rgb(var(--rgb-online-color));
 }
-.panel__5dec7.activityPanel__5e434 {
-  margin: 0 0 4px 0 !important;
-  width: 100% !important;
-  background: rgba(var(--rgb-background), 1) !important;
-  border-radius: 8px !important;
-  border: 1px solid rgba(var(--rgb-highlight), 0.2) !important;
-  border-bottom: 1px solid rgba(var(--rgb-highlight), 0.2) !important;
-  padding: 10px !important;
-  box-sizing: border-box;
+rect[fill="#45a366"] {
+  fill: rgb(var(--rgb-online-color));
 }
 
 [style*="color: var(--status-positive)"] {
@@ -98,6 +91,17 @@
 [aria-label*="Do Not Disturb"] rect[fill="#f04747"],
 [aria-label*="Do Not Disturb"] rect[mask*="status-dnd"] {
   fill: rgb(var(--rgb-dnd-color)) !important;
+}
+
+.panel__5dec7.activityPanel__5e434 {
+  margin: 0 0 4px 0 !important;
+  width: 100% !important;
+  background: rgba(var(--rgb-background), 1) !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(var(--rgb-highlight), 0.2) !important;
+  border-bottom: 1px solid rgba(var(--rgb-highlight), 0.2) !important;
+  padding: 10px !important;
+  box-sizing: border-box;
 }
 
 .typingDots_b88801 {
