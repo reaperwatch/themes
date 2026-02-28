@@ -1,9 +1,6 @@
 ### USE HARDWARE ACCELERATION!!! the transparent elements will lag without it enabled and vencord to load the theme
 
-<p align="center">
-  <img src="https://reaperwatch.github.io/themes/imgs/theme.gif" alt="Dark Neon Theme" width="600">
-</p>
-
+![themegif](https://reaperwatch.github.io/themes/imgs/theme.gif)
 
 online theme: 
 ```
