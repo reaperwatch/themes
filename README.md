@@ -1,6 +1,6 @@
 ### USE HARDWARE ACCELERATION!!! the transparent elements will lag without it enabled and vencord to load the theme
 
-![themegif](https://cdn.discordapp.com/attachments/1476702309336748062/1477309994410971369/theme.gif?ex=69a44ba5&is=69a2fa25&hm=ad2b41166935c330f0538b8dd0e022bea63c5fd4d5e354fb88c49a9168e57c7f&)
+![themegif](https://reaperwatch.github.io/themes/imgs/theme%20(1).gif)
 
 online theme: 
 ```
