@@ -64,6 +64,14 @@
   --background-brightness: 100%;
 }
 
+.content__908e2 {
+  background-color: rgba(var(--rgb-background), 1);
+}
+
+.bar__7aaec {
+  background-color: rgba(var(--rgb-background), 1);
+}
+
 .icon_c9d15c path {
   fill: rgb(var(--rgb-online-color));
 }
