@@ -4,7 +4,8 @@ online theme:
 ```
 https://reaperwatch.github.io/themes/DarkNeon.themeMODIFIED.css
 ```
-![alt text](https://reaperwatch.github.io/themes/imgs/onlinetheme.png)
+![example of where to put the link](https://reaperwatch.github.io/themes/imgs/onlinetheme.png)
+> put the url as shown in the image
 
 install command: 
 ```
