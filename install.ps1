@@ -20,13 +20,20 @@ if (!(Test-Path $themeDir)) {
 }
 
 
+
 try {
     Write-Host "Downloading (or updating) Dark Neon..." -ForegroundColor Gray
+    
+    # Force PowerShell to use TLS 1.2 (Fixes the connection error)
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    
     Invoke-WebRequest -Uri $repoUrl -OutFile "$themeDir\$fileName" -Force 
+    
     Write-Host "Successfully installed/updated!" -ForegroundColor Green
     Write-Host "Refresh Discord (Ctrl+R) to apply changes." -ForegroundColor Cyan
 }
-
 catch {
-    Write-Host "Error: Could not download the file. check your internet connection." -ForegroundColor Red
+    Write-Host "Error: Could not download the file. Check your internet connection or GitHub link." -ForegroundColor Red
+    Write-Host $_.Exception.Message -ForegroundColor Yellow 
 }
+
