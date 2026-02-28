@@ -1,3 +1,5 @@
+### USE HARDWARE ACCELERATION!!! the transparent elements will lag without it enabled and vencord to load the theme
+
 online theme: 
 ```
 https://reaperwatch.github.io/themes/DarkNeon.themeMODIFIED.css
@@ -14,5 +16,3 @@ online import theme:
 ```
 @import url("https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css");
 ```
-
-### USE HARDWARE ACCELERATION!!! the transparent elements will lag without it enabled
