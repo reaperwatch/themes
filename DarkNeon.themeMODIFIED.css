@@ -74,8 +74,33 @@ rect[fill="#45a366"] {
 [style*="color: var(--status-positive)"] {
   color: rgb(var(--rgb-online-color)) !important;
 }
-.status_a423bd {
+
+.menuItemIcon_ce8328 foreignObject[mask*="status-online"] .status_a423bd {
   background-color: rgb(var(--rgb-online-color)) !important;
+}
+
+.menuItemIcon_ce8328 foreignObject[mask*="status-idle"] .status_a423bd {
+  background-color: rgb(var(--rgb-afk-color)) !important;
+}
+
+.menuItemIcon_ce8328 foreignObject[mask*="status-dnd"] .status_a423bd {
+  background-color: rgb(var(--rgb-dnd-color)) !important;
+}
+
+.menuItemIcon_ce8328 foreignObject[mask*="status-streaming"] .status_a423bd {
+  background-color: rgb(var(--rgb-streaming-color)) !important;
+}
+
+#set-status-submenu-online foreignObject[mask*="status-online"] .status_a423bd {
+  background-color: rgb(var(--rgb-online-color)) !important;
+}
+
+#set-status-submenu-idle foreignObject[mask*="status-idle"] .status_a423bd {
+  background-color: rgb(var(--rgb-afk-color)) !important;
+}
+
+#set-status-submenu-dnd foreignObject[mask*="status-dnd"] .status_a423bd {
+  background-color: rgb(var(--rgb-dnd-color)) !important;
 }
 
 [aria-label*="Online"] rect[fill="#45a366"],
@@ -91,6 +116,11 @@ rect[fill="#45a366"] {
 [aria-label*="Do Not Disturb"] rect[fill="#f04747"],
 [aria-label*="Do Not Disturb"] rect[mask*="status-dnd"] {
   fill: rgb(var(--rgb-dnd-color)) !important;
+}
+
+[aria-label*="Streaming"] rect[fill="#593695"],
+[aria-label*="Streaming"] rect[mask*="status-streaming"] {
+  fill: rgb(var(--rgb-streaming-color)) !important;
 }
 
 .panel__5dec7.activityPanel__5e434 {
