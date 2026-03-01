@@ -5,7 +5,7 @@
 $repoUrl = "https://raw.githubusercontent.com/reaperwatch/themes/main/signalis_orangeNblack.css"
 $vencordDir = "$env:AppData\Vencord"
 $themeDir = "$vencordDir\themes"
-$fileName = "DarkNeon.themeMODIFIED.css"
+$fileName = "signalis_orangeNblack.css"
 $fullPath = "$themeDir\$fileName"
 
 Write-Host "--- Dark Neon Theme Installer ---" -ForegroundColor Cyan
