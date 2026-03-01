@@ -64,6 +64,22 @@
   --background-brightness: 100%;
 }
 
+.container__5573a {
+  background-color: rgba(var(--rgb-background), 1);
+}
+
+.sidebarContainer__89463 {
+  background-color: rgba(var(--rgb-background), 1) !important;
+}
+
+.toolbar__89463.container__9293f.themed__9293f {
+  background-color: rgba(var(--rgb-background), 1) !important;
+}
+
+.contentContainer__89463 {
+  background-color: rgba(var(--rgb-background), 1);
+}
+
 .actionButton_f8fa06 {
   background-color: rgba(var(--rgb-highlight), 0.3);
 }
