@@ -4,15 +4,15 @@
 :root,
 .visual-refresh,
 .visual-refresh.theme-dark {
-  --font-primary: "Rajdhani", sans-serif; /* change the font here! */
+  --font-primary: "Rajdhani", sans-serif;
   --rgb-highlight: 255, 20, 6;
   --rgb-background: 0, 0, 0;
   --rgb-text: 173, 186, 199;
   --rgb-close-button: 240, 98, 146;
-  --rgb-online-color: 255, 44, 6; /* darker blue */
-  --rgb-afk-color: 255, 255, 51; /* Default idle */
-  --rgb-dnd-color: 254, 0, 0; /* Default dnd */
-  --rgb-streaming-color: 188, 19, 254; /* Default streaming */
+  --rgb-online-color: 255, 44, 6;
+  --rgb-afk-color: 255, 255, 51;
+  --rgb-dnd-color: 254, 0, 0;
+  --rgb-streaming-color: 188, 19, 254;
   --transition-time: 0.3s;
   --background-image: unset;
   --background-position: center;
