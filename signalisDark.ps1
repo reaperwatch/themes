@@ -8,7 +8,7 @@ $themeDir = "$vencordDir\themes"
 $fileName = "signalis_orangeNblack.css"
 $fullPath = "$themeDir\$fileName"
 
-Write-Host "--- Dark Neon Theme Installer ---" -ForegroundColor Cyan
+Write-Host "--- Signalis dark Theme Installer ---" -ForegroundColor Cyan
 
 # Check if Vencord is installed
 if (!(Test-Path $vencordDir)) {
