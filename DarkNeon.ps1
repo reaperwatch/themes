@@ -3,15 +3,8 @@
 
 # Configuration
 $repoUrl = "https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css"
-if ($IsWindows) {
-$vencordDir = "$env:AppData\Vencord"
-} if ($IsLinux) {
-$vencordDir = "$env:HOME/.config/Vencord"
-} else {
-    Write-Host " Unsupported OS. This script only supports Windows and Linux." -ForegroundColor Red
-    return
-}
-$themeDir = "$vencordDir\themes"
+$vencordDir = $IsLinux ? "$env:HOME/.config/Vencord" : "$env:AppData\Vencord"
+$themeDir = $IsLinux ? "$vencordDir/themes" : "$vencordDir\themes"
 $fileName = "DarkNeon.themeMODIFIED.css"
 $fullPath = "$themeDir\$fileName"
 
