@@ -3,7 +3,14 @@
 
 # Configuration
 $repoUrl = "https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css"
+if ($IsWindows) {
 $vencordDir = "$env:AppData\Vencord"
+} if ($IsLinux) {
+$vencordDir = "$env:HOME/.config/Vencord"
+} else {
+    Write-Host " Unsupported OS. This script only supports Windows and Linux." -ForegroundColor Red
+    return
+}
 $themeDir = "$vencordDir\themes"
 $fileName = "DarkNeon.themeMODIFIED.css"
 $fullPath = "$themeDir\$fileName"
@@ -30,7 +37,7 @@ try {
         Remove-Item $fullPath -ErrorAction SilentlyContinue
     }
 
-    # Download using -UseBasicParsing (Better compatibility for older PowerShell)
+    # Download request
     Invoke-WebRequest -Uri $repoUrl -OutFile $fullPath -UseBasicParsing -ErrorAction Stop
     
     Write-Host " Successfully installed/updated!" -ForegroundColor Green

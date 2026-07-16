@@ -2,26 +2,31 @@
 
 ![themegif](https://raw.githubusercontent.com/reaperwatch/themes/main/imgs/theme.gif)
 
-online theme: 
+online theme:
+
 ```
 https://reaperwatch.github.io/themes/DarkNeon.themeMODIFIED.css
 https://reaperwatch.github.io/themes/signalis_orangeNblack.css
 ```
+
 ![example of where to put the link](https://reaperwatch.github.io/themes/imgs/onlinetheme.png)
+
 > put the url as shown in the image
 
-install commands: 
+install commands: (for linux run "pwsh" first to enter powershell mode)
+
 ```
 irm https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.ps1 | iex
 irm https://raw.githubusercontent.com/reaperwatch/themes/main/signalisDark.ps1 | iex
 ```
+
 > (to modifiy the file to your liking use powershell with admin perms) <br> !installs inside appdata/roaming/vencord/themes/!
 
-online import themes: 
+online import themes:
+
 ```
 @import url("https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css");
 @import url("https://raw.githubusercontent.com/reaperwatch/themes/main/signalis_orangeNblack.css");
 ```
+
 > put this import inside a css file to get the effects of this theme.
-
-
