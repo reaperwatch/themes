@@ -65,7 +65,7 @@
 }
 
 .aside_f58343 {
-  background: var(none) !important;
+  background: var(none, var(none)) !important;
 }
 
 .chipletContainerInner__10651.chipletContainerInline__10651.clickable__10651.clanTagChiplet_c19a55 {
