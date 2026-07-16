@@ -3,8 +3,8 @@
 
 # Configuration
 $repoUrl = "https://raw.githubusercontent.com/reaperwatch/themes/main/signalis_orangeNblack.css"
-$vencordDir = "$env:AppData\Vencord"
-$themeDir = "$vencordDir\themes"
+$vencordDir = $IsLinux ? "$env:HOME/$env:user/.config/vesktop" : "$env:AppData\Vencord"
+$themeDir = $IsLinux ? "$vencordDir/themes" : "$vencordDir\themes"
 $fileName = "signalis_orangeNblack.css"
 $fullPath = "$themeDir\$fileName"
 
@@ -30,7 +30,7 @@ try {
         Remove-Item $fullPath -ErrorAction SilentlyContinue
     }
 
-    # Download using -UseBasicParsing (Better compatibility for older PowerShell)
+    # Download request
     Invoke-WebRequest -Uri $repoUrl -OutFile $fullPath -UseBasicParsing -ErrorAction Stop
     
     Write-Host " Successfully installed/updated!" -ForegroundColor Green
