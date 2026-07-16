@@ -3,7 +3,7 @@
 
 # Configuration
 $repoUrl = "https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css"
-$vencordDir = $IsLinux ? "$env:HOME/.config/Vencord" : "$env:AppData\Vencord"
+$vencordDir = $IsLinux ? "~/.config/Vencord" : "$env:AppData\Vencord"
 $themeDir = $IsLinux ? "$vencordDir/themes" : "$vencordDir\themes"
 $fileName = "DarkNeon.themeMODIFIED.css"
 $fullPath = "$themeDir\$fileName"
