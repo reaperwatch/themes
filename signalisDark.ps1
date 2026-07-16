@@ -12,7 +12,7 @@ Write-Host "--- Signalis dark Theme Installer ---" -ForegroundColor Cyan
 
 # Check if Vencord is installed
 if (!(Test-Path $vencordDir)) {
-    Write-Host " Error: Vencord directory not found at $vencordDir" -ForegroundColor Red
+    Write-Host " Error: $($IsLinux ? "Vesktop" : "Vencord") directory not found at $vencordDir" -ForegroundColor Red
     return 
 }
 
