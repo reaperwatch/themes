@@ -3,14 +3,14 @@
 
 # Configuration
 $repoUrl = "https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css"
-$vencordDir = $IsLinux ? "$env:HOME/.config/vesktop" : "$env:AppData\Vencord"
+$vencordDir = $IsLinux ? "$env:HOME/$env:user/.config/vesktop" : "$env:AppData\Vencord"
 $themeDir = $IsLinux ? "$vencordDir/themes" : "$vencordDir\themes"
 $fileName = "DarkNeon.themeMODIFIED.css"
 $fullPath = "$themeDir\$fileName"
 
 Write-Host "--- Dark Neon Theme Installer ---" -ForegroundColor Cyan
 
-# Check if Vencord is installed
+# Check if Vencord/vesktop is installed
 if (!(Test-Path $vencordDir)) {
     Write-Host " Error: Vencord directory not found at $vencordDir" -ForegroundColor Red
     return 
