@@ -12,7 +12,7 @@ Write-Host "--- Dark Neon Theme Installer ---" -ForegroundColor Cyan
 
 # Check if Vencord/vesktop is installed
 if ((Test-Path $vencordDir)) {
-    Write-Host " Error: ${$IsLinux ? "Vesktop" : "Vencord:"} directory not found at $vencordDir" -ForegroundColor Red
+    Write-Host " Error: ${IsLinux ? "Vesktop" : "Vencord:"} directory not found at $vencordDir" -ForegroundColor Red
     return 
 }
 
