@@ -7,6 +7,7 @@ online theme:
 ```
 https://reaperwatch.github.io/themes/DarkNeon.themeMODIFIED.css
 https://reaperwatch.github.io/themes/signalis_orangeNblack.css
+https://reaperwatch.github.io/themes/purpleNblack.css
 ```
 
 ![example of where to put the link](https://reaperwatch.github.io/themes/imgs/onlinetheme.png)
@@ -27,6 +28,7 @@ online import themes:
 ```
 @import url("https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css");
 @import url("https://raw.githubusercontent.com/reaperwatch/themes/main/signalis_orangeNblack.css");
+@import url("https://raw.githubusercontent.com/reaperwatch/themes/main/purpleNblack.css");
 ```
 
 > put this import inside a css file to get the effects of this theme.
