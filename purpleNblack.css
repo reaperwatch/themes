@@ -1,0 +1,37 @@
+/**
+ * @name Dark Neon (signalis redNblack style)
+ * @author Bates
+ * @version 3.0.0
+ * @source https://gitlab.com/B4T3S/bates-discord-theme
+ * @website https://B4T3S.gitlab.io/bates-discord-theme/
+ * @donate https://www.paypal.com/paypalme/floriancegledi
+ * @patreon https://patreon.com/bates
+ * @description A dark theme with bright neon-y colors, now with more options!
+ * @authorId 137259132305539072
+ * @invite 6qd3SkP6Ch
+ *!!!!!!!!!!!!!!!!!!!!
+ * @MODIFIED by slashing__moon on discord!!! credits go to the original creator!!
+*/
+
+@import url("https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css");
+
+/* CUSTOMIZE COLORS AND FONTS IN HERE! */
+:root,
+.visual-refresh,
+.visual-refresh.theme-dark {
+  --font-primary: "Rajdhani", sans-serif;
+  --rgb-highlight: 229, 175, 255;
+  --rgb-background: 0, 0, 0;
+  --rgb-text: 210, 200, 225;
+  --rgb-close-button: 235, 140, 200;
+  --rgb-online-color: 88, 201, 114;
+  --rgb-dnd-color: 245, 90, 90;
+  --rgb-afk-color: 255, 255, 51;
+  --rgb-streaming-color: 187, 142, 255;
+  --transition-time: 0.3s;
+  --background-image: unset;
+  --background-position: center;
+  --background-size: cover;
+  --background-blur: 5px;
+  --background-brightness: 100%;
+}
