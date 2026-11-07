@@ -50,12 +50,12 @@
     background-color: transparent;
 }
 
-.membersGroup_86es0b .roleIcon_3jSSrV {
+.membersGroup_86es0b img {
     translate: 8px -8px;
     transition: translate var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
-.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :hover .membersGroup_86es0b .roleIcon_3jSSrV {
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :hover .membersGroup_86es0b img {
     translate: 0 0;
 }
 
@@ -135,4 +135,18 @@
 
 .content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :not(:hover) .vc-membercount-widget .vc-membercount-container {
     column-gap: 2px
+}
+
+/* discord nitro custom theme fixes */
+
+.content_z_gUBg > .container_86es0b > .membersWrap_86es0b {
+    background: var(--background-gradient-chat, var(--custom-channel-members-bg));
+}
+
+.content_z_gUBg > .container_86es0b > .membersWrap_86es0b > .members_86es0b {
+    background: transparent;
+}
+
+.member_Iy0c7A {
+    background: transparent
 }
