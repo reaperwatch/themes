@@ -1,0 +1,74 @@
+/* IMAGE VIEWER THEMING V5*/
+
+/* make photo view scrim less dark */
+.scrim_od1dl1 {
+  background-color: var(--background-scrim);
+  backdrop-filter: blur(5px);
+}
+.carouselModal_7QK1F9.root__KoJTP {
+  backdrop-filter: none;
+}
+
+/* image author background */
+div.topBar_QGyCSa > div.author_QGyCSa.base_MMA_-K {
+  position: relative;
+  &::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  bottom: -8%;
+  top: -50%;
+  left: -35%;
+  right: -10%;
+  z-index: -1;
+  transform: translateY(15%);
+  background-color: #ffffff0c;
+  }
+}
+
+/*move author position*/
+.authorAvatar_QGyCSa {
+  z-index: 2;
+  transform: translatex(45%);
+}
+.author_QGyCSa {
+
+  transform: translatex(10%);
+}
+
+/*theme action buttons to match author background*/
+div.topBar_QGyCSa > .actionButtons_Q2cxvN, 
+div.topBar_QGyCSa > .button_zpnerZ {
+  background-color: #ffffff0c;
+}
+
+/*X button theming*/
+div.topBar_QGyCSa > .button_zpnerZ {
+  transform: translateY(2%) scale(110%);
+}
+
+/* size up previous & next buttons */
+div.layer_C_WHpX
+ > div > div > 
+ .button_zpnerZ {
+  background: #5e5e5e1c;
+  transform: scale(140%);
+  height: 50%;
+  place-items: center;
+  display: flex;
+}
+
+div.layer_C_WHpX
+ > div > div > 
+ div.button_zpnerZ > .buttonInner_zpnerZ {
+  border-color: #6e6e6e;
+  height: 100%;
+ }
+
+/*brighten backgrounds for transparent images for legibility*/
+.imageWrapper.imageWrapper_W6wEGA.media__CdFCR > .loadingOverlay_W6wEGA {
+  background-color: #ffffff31;
+  border-radius: 8px;
+}

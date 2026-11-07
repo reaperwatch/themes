@@ -18,7 +18,7 @@
 @import url("https://B4T3S.github.io/DiscordDarkNeon/mainRewrite.css");
 /* ^ This is the main Import ^ DO NOT TOUCH. Without this, the theme won't load!!! */
 
-@import url("https://raw.githubusercontent.com/reaperwatch/themes/main/hideUsers.css");
+@import url("https://raw.githubusercontent.com/reaperwatch/themes/main/imports/hideUsers.css");
 /* This import adds the collapsible user-list. Remove it/comment it out to disable that feature */
 
 /* Imports the font from Google Fonts "Rajdhani" */
@@ -26,7 +26,7 @@
 
 @import url("https://raw.githubusercontent.com/Benzeel/Bennys-Css-Snippets/refs/heads/main/TransparentMessagebox.css");
 
-@import url("https://raw.githubusercontent.com/Benzeel/Bennys-Css-Snippets/refs/heads/main/ImageViewerTweaks.css");
+@import url("https://raw.githubusercontent.com/reaperwatch/themes/main/imports/imageViewer.css");
 
 /* only show the server list on hover */
 .guilds__5e434 {
