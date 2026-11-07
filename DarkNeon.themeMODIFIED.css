@@ -15,9 +15,8 @@
 
 /* @import url("https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css"); online import*/
 
-/*@import url("https://B4T3S.github.io/DiscordDarkNeon/mainRewrite.css");
+@import url("https://B4T3S.github.io/DiscordDarkNeon/mainRewrite.css");
 /* ^ This is the main Import ^ DO NOT TOUCH. Without this, the theme won't load!!! */
-@import url("https://raw.githubusercontent.com/reaperwatch/themes/main/imports/main.css"); 
 
 @import url("https://raw.githubusercontent.com/reaperwatch/themes/main/imports/hideUsers.css"); 
 /* This import adds the collapsible user-list. Remove it/comment it out to disable that feature NAME: compact member list */
