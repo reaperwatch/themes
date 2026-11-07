@@ -1,1 +1,138 @@
-:root{--hidden-user-width: 50px;--user-width: 264px}.container_86es0b,.membersWrap_86es0b{transition-duration:var(--transition-time);justify-content:unset;min-width:unset;width:var(--hidden-user-width)}.membersGroup_86es0b{height:0px !important;padding:0px !important;transition-duration:var(--transition-time);overflow:hidden}.container_g7esM5{height:0px;transition-duration:var(--transition-time);overflow:hidden;padding:0px;border:none !important}.container_86es0b:hover .membersGroup_86es0b,.membersWrap_86es0b:hover .membersGroup_86es0b{height:auto !important;padding-top:12px !important;padding-bottom:6px !important}.childContainer_J1Adu_{padding-left:0px;transition-duration:var(--transition-time)}.container_86es0b:hover .container_g7esM5{height:48px;padding:8px}.container_86es0b:hover .childContainer_J1Adu_{padding-left:8px}.container_86es0b:hover,.membersWrap_86es0b:hover{width:var(--user-width)}.profilePanel-2PWEok{transition-duration:var(--transition-time)}
+/* options:
+ * --compact-member-list-transition-definition: defines the transition timing and easing
+ */
+
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) {
+    width: 64px !important;
+    min-width: 64px;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > * {
+    width: 265px;
+    overflow: visible;
+    transition: translate var(--compact-member-list-transition-definition, 0.25s ease-out);
+}
+
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :hover {
+    translate: -201px 0;
+}
+
+.content_z_gUBg > .membersWrap_86es0b > :not(:hover) {
+    padding-left: 1px;
+}
+
+/* group separator */
+
+.membersGroup_86es0b,
+.membersGroup_86es0b [style] {
+    transition: color var(--compact-member-list-transition-definition, 0.25s ease-out);
+}
+
+.membersGroup_86es0b::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 20px;
+    margin-top: 10px;
+    background-color: var(--channels-default);
+    transition: background-color var(--compact-member-list-transition-definition, 0.25s ease-out);
+}
+
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :not(:hover) .membersGroup_86es0b,
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :not(:hover) .membersGroup_86es0b [style] {
+    color: transparent !important;
+}
+
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :hover .membersGroup_86es0b::before {
+    background-color: transparent;
+}
+
+.membersGroup_86es0b .roleIcon_3jSSrV {
+    translate: 8px -8px;
+    transition: translate var(--compact-member-list-transition-definition, 0.25s ease-out);
+}
+
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :hover .membersGroup_86es0b .roleIcon_3jSSrV {
+    translate: 0 0;
+}
+
+/* member */
+
+.member_Iy0c7A .memberInner_Iy0c7A > :not(.avatar_J1Adu_) {
+    translate: 8px 0;
+    transition: translate var(--compact-member-list-transition-definition, 0.25s ease-out);
+}
+
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :hover .member_Iy0c7A .memberInner_Iy0c7A > :not(.avatar_J1Adu_) {
+    translate: 0 0;
+}
+
+.member_Iy0c7A .container_AFi54G {
+    width: 46px;
+}
+
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :hover .member_Iy0c7A .container_AFi54G {
+    width: 100%;
+}
+
+/* private thread instructions */
+
+.instructions_UPjGEs, .private_UPjGEs {
+    transition: color var(--compact-member-list-transition-definition, 0.25s ease-out);
+}
+
+.private_UPjGEs > svg {
+    color: var(--text-default);
+    transition: translate var(--compact-member-list-transition-definition, 0.25s ease-out);
+    translate: 9px 0;
+}
+
+.content_z_gUBg > .membersWrap_86es0b > :not(:hover) .divider_UPjGEs {
+    width: 30px;
+}
+
+.content_z_gUBg > .membersWrap_86es0b > :not(:hover) :is(.instructions_UPjGEs, .private_UPjGEs) {
+    color: transparent !important;
+}
+
+.content_z_gUBg > .membersWrap_86es0b > :hover .private_UPjGEs > svg {
+    translate: 0 0;
+}
+
+/* Vencord Plugin support: MemberCount */
+
+/* Assumption: vc-membercount-widget always has 1 row when expanded */
+.vc-membercount-widget {
+    height: 36px;
+    margin-top: 0;
+    align-content: flex-end;
+}
+
+/* I don't want to deal with different sizes of circle icons */
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :not(:hover) .vc-membercount-widget svg:not(.vc-membercount-voice-icon) {
+    display: none;
+}
+
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :not(:hover) .vc-membercount-widget {
+    padding-left: 0;
+    width: 64px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    row-gap: 0;
+    font-size: 10px;
+}
+
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :not(:hover) .vc-membercount-widget .vc-membercount-voice-icon {
+    width: 8px;
+    height: 8px;
+}
+
+.content_z_gUBg > :is(.container_86es0b, .membersWrap_86es0b) > :not(:hover) .vc-membercount-widget .vc-membercount-container {
+    column-gap: 2px
+}
