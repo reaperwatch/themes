@@ -1,0 +1,51 @@
+:root{
+
+/* Below are some easy variable adjustments*/
+
+    --snippet-autohideguild-bbox: 30px; /* Detection Box Width (higher numbers can be buggy)*/
+    
+    --snippet-autohideguild-anim-open-hold: 0s; /* Open Animation Delay */
+    --snippet-autohideguild-anim-open: 0.05s; /* Open Animation Duration */
+    
+    --snippet-autohideguild-anim-close-hold: 0.2s; /* Close Animation Delay */
+    --snippet-autohideguild-anim-close: 0.8s; /* Close Animation Duration */
+    
+    --snippet-autohideguild-bg: #09090AFF; /* Server List Background Color */
+    --snippet-autohideguild-bg-trans: #09090A88; /* Server List Background Color Opacity (last two digits are opacity)*/
+}
+
+/* only show the server list on hover */
+
+.guilds_pog62O {
+    width: var(--custom-guild-list-width);
+    transition: var(--snippet-autohideguild-anim-close) ease-in;
+    transition-delay: var(--snippet-autohideguild-anim-close-hold);
+    position: relative;
+    z-index: 9000;
+    opacity: 0;
+    background-color: transparent;
+    margin-right: calc(var(--custom-guild-list-width) * -2 + var(--snippet-autohideguild-bbox));
+    border-right: var(--snippet-autohideguild-bbox) solid transparent;
+    transform: translateX(calc(var(--custom-guild-list-width) * -1)); /*last should be -1 if not debugging*/
+    &:hover {
+        transition: var(--snippet-autohideguild-anim-open) ease-out;
+        transition-delay: var(--snippet-autohideguild-anim-open-hold);
+        opacity: 1;
+        margin-right: calc(var(--custom-guild-list-width) * -1 - var(--snippet-autohideguild-bbox));
+        border-right: 0 solid transparent;
+        transform: translateX(0);
+    };
+}
+.wrapper_5dqHTG {
+    margin-bottom: 0 !important;
+}
+div.stack_TWWX0S {
+    background-color: var(--snippet-autohideguild-bg-trans);
+    transition: 0.2s;
+    transition-delay: 0s;
+    &:hover {
+        background-color: var(--snippet-autohideguild-bg);
+        transition: 0.2s;
+        transition-delay: 0s;
+    };
+}

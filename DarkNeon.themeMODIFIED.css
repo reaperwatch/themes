@@ -30,7 +30,9 @@
 
 @import url("https://raw.githubusercontent.com/reaperwatch/themes/main/imports/translucentSettings.css");
 
-/* only show the server list on hover */
+@import url("https://raw.githubusercontent.com/reaperwatch/themes/main/imports/serverHover.css");
+
+/* only show the server list on hover 
 .guilds_pog62O {
   width: var(--space-8);
   transition: 0.25s ease-in-out;
@@ -39,7 +41,7 @@
     width: var(--custom-guild-list-width);
     opacity: 1;
   }
-}
+} */
 
 [class^="sidebarResizeHandle"] {
   display: none;
