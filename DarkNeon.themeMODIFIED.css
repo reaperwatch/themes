@@ -31,7 +31,7 @@
 @import url("https://raw.githubusercontent.com/reaperwatch/themes/main/imports/translucentSettings.css");
 
 /* only show the server list on hover */
-.guilds__5e434 {
+.guilds_pog62O {
   width: var(--space-8);
   transition: 0.25s ease-in-out;
   opacity: 0;
@@ -66,67 +66,67 @@
   --background-brightness: 100%;
 }
 
-.menu_c1e9c4.flexible_c1e9c4 {
+.menu_M3qk4j.flexible_M3qk4j {
   background-color: rgba(var(--rgb-background), 1) !important;
 }
 
-.aside_f58343 {
+.aside_HbUF2J {
   background: var(--rgb-background);
 }
 
-.chipletContainerInner__10651.chipletContainerInline__10651.clickable__10651.clanTagChiplet_c19a55 {
+.chipletContainerInner_k8jyN7.chipletContainerInline_k8jyN7.clickable_k8jyN7.clanTagChiplet_2i8Bfm {
   background-color: rgba(var(--rgb-highlight), 0.1);
 }
 
-.container__5573a {
+.container_POHM-Y {
   background-color: rgba(var(--rgb-background), 1);
 }
 
-.sidebarContainer__89463 {
+.sidebarContainer_rhYbEd {
   background-color: rgba(var(--rgb-background), 1) !important;
 }
 
-.toolbar__89463.container__9293f.themed__9293f {
+.toolbar_rhYbEd.container_ybUK7Z.themed_ybUK7Z {
   background-color: rgba(var(--rgb-background), 1) !important;
 }
 
-.contentContainer__89463 {
+.contentContainer_rhYbEd {
   background-color: rgba(var(--rgb-background), 1);
 }
 
-.actionButton_f8fa06 {
+.actionButton_5GqXgh {
   background-color: rgba(var(--rgb-highlight), 0.3);
 }
 
-.tooltip__4e35b {
+.tooltip_ZDdyhE {
   background-color: rgba(var(--rgb-background), 1);
 }
 
-.container_d3846c.spinnerContainer_d3846c {
+.container_klbANn.spinnerContainer_klbANn {
   background-color: rgba(var(--rgb-background), 1);
 }
 
-.avatarWrapper_dca174 {
+.avatarWrapper_Xweo-z {
   background-color: rgba(var(--rgb-background), 0.3);
 }
 
-.container_dca174 {
+.container_Xweo-z {
   background-color: rgba(var(--rgb-background), 1);
 }
 
-.progressContainer__0d0f9 {
+.progressContainer_BFMMcK {
   background-color: rgba(var(--rgb-background), 1);
 }
 
-.textContainer__0d0f9 {
+.textContainer_BFMMcK {
   background-color: rgba(var(--rgb-background), 1);
 }
 
-.content__908e2 {
+.content_4TfzT5 {
   background-color: rgba(var(--rgb-background), 1);
 }
 
-.bar__7aaec {
+.bar_t1P8Sn {
   background-color: rgba(var(--rgb-background), 1);
 }
 
@@ -141,31 +141,31 @@ rect[fill="#45a366"] {
   color: rgb(var(--rgb-online-color)) !important;
 }
 
-.menuItemIcon_ce8328 foreignObject[mask*="status-online"] .status_a423bd {
+.menuItemIcon_nitlyF foreignObject[mask*="status-online"] .status_PlwcO5 {
   background-color: rgb(var(--rgb-online-color)) !important;
 }
 
-.menuItemIcon_ce8328 foreignObject[mask*="status-idle"] .status_a423bd {
+.menuItemIcon_nitlyF foreignObject[mask*="status-idle"] .status_PlwcO5 {
   background-color: rgb(var(--rgb-afk-color)) !important;
 }
 
-.menuItemIcon_ce8328 foreignObject[mask*="status-dnd"] .status_a423bd {
+.menuItemIcon_nitlyF foreignObject[mask*="status-dnd"] .status_PlwcO5 {
   background-color: rgb(var(--rgb-dnd-color)) !important;
 }
 
-.menuItemIcon_ce8328 foreignObject[mask*="status-streaming"] .status_a423bd {
+.menuItemIcon_nitlyF foreignObject[mask*="status-streaming"] .status_PlwcO5 {
   background-color: rgb(var(--rgb-streaming-color)) !important;
 }
 
-#set-status-submenu-online foreignObject[mask*="status-online"] .status_a423bd {
+#set-status-submenu-online foreignObject[mask*="status-online"] .status_PlwcO5 {
   background-color: rgb(var(--rgb-online-color)) !important;
 }
 
-#set-status-submenu-idle foreignObject[mask*="status-idle"] .status_a423bd {
+#set-status-submenu-idle foreignObject[mask*="status-idle"] .status_PlwcO5 {
   background-color: rgb(var(--rgb-afk-color)) !important;
 }
 
-#set-status-submenu-dnd foreignObject[mask*="status-dnd"] .status_a423bd {
+#set-status-submenu-dnd foreignObject[mask*="status-dnd"] .status_PlwcO5 {
   background-color: rgb(var(--rgb-dnd-color)) !important;
 }
 
@@ -189,7 +189,7 @@ rect[fill="#45a366"] {
   fill: rgb(var(--rgb-streaming-color)) !important;
 }
 
-.panel__5dec7.activityPanel__5e434 {
+.panel_8eCwJY.activityPanel_pog62O {
   margin: 0 0 4px 0 !important;
   width: 100% !important;
   background: rgba(var(--rgb-background), 1) !important;
@@ -200,18 +200,18 @@ rect[fill="#45a366"] {
   box-sizing: border-box;
 }
 
-.typingDots_b88801 {
+.typingDots_U9Tvvz {
   /* makes typing chat anims have a slight background for readablity */
   background: rgba(var(--rgb-highlight), 0.15) !important; /* Light glow bar */
   border-radius: 40px !important;
   margin-right: 80% !important;
 }
-.stackedBars__74017 {
+.stackedBars_2x8-Qn {
   background: rgba(var(--rgb-highlight), 0.1) !important; /* Light glow bar */
 }
 
 /* Changes text color of the selected channel to be brighter */
-.modeSelected_d808b0 .name_d808b0 {
+.modeSelected_d808b0 .name_J1Adu_ {
   color: #ffffff !important;
   font-weight: 600;
   text-shadow: 0 0 5px rgba(var(--rgb-highlight), 0.5);
@@ -224,7 +224,7 @@ rect[fill="#45a366"] {
 }
 
 /* Adds the vertical bar/border to the left of the chat content */
-.content_f75fb0 {
+.content_z_gUBg {
   border-left: 2px solid rgba(var(--rgb-highlight), 0.4) !important;
   /*margin-left: 8px !important; /* This creates the physical gap "bar" */
   box-shadow: -4px 0 10px -4px rgba(var(--rgb-highlight), 0.2); /* Adds a slight glow to the bar */
@@ -236,13 +236,13 @@ rect[fill="#45a366"] {
 }
 
 /* Ensures the container doesn't clip the new border/glow */
-.content_f75fb0 {
+.content_z_gUBg {
   overflow: -moz-hidden-unscrollable !important;
 }
 
 /* Make chat gradient nearly invisible to blend with background */
-.chatGradient__36d07,
-.chatGradientBase__36d07 {
+.chatGradient_8AE1Qq,
+.chatGradientBase_8AE1Qq {
   background-image: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.02),
@@ -254,76 +254,76 @@ rect[fill="#45a366"] {
   transition: background 0.3s ease !important;
 }
 
-.peopleColumn__133bf {
+.peopleColumn_zrUwGA {
   background: rgba(
     var(--rgb-background),
     1
   ) !important; /* Light glow background */
 }
 
-.container__7d20c.refresh-active-now {
+.container_GNEh_C.refresh-active-now {
   background: rgba(
     var(--rgb-background),
     1
   ) !important; /* Light glow background */
 }
 
-.shop__08415 {
+.shop_XBXDcd {
   background: rgba(
     var(--rgb-background),
     1
   ) !important; /* Light glow background */
 }
-.headerBar__80679.container__9293f.themed__9293f {
+.headerBar_ViLURN.container_ybUK7Z.themed_ybUK7Z {
   background: rgba(
     var(--rgb-background),
     1
   ) !important; /* Light glow background */
 }
-.contentSection_b6bcee {
+.contentSection_YXXVAo {
   background: rgba(
     var(--rgb-background),
     1
   ) !important; /* Light glow background */
 }
-.container__60f82 {
+.container_e8rJ7m {
   background: rgba(
     var(--rgb-background),
     1
   ) !important; /* Light glow background */
 }
-.scroller__23746.thin_d125d2.scrollerBase_d125d2 {
+.scroller_jkJlMe.thin_tqapBM.scrollerBase_tqapBM {
   background: rgba(
     var(--rgb-background),
     1
   ) !important; /* Light glow background */
 }
-.inventoryWrapper__1feb0 {
+.inventoryWrapper_4Qm5zV {
   background: rgba(
     var(--rgb-background),
     1
   ) !important; /* Light glow background */
 }
-.filterBar__1feb0.thin_d125d2.scrollerBase_d125d2 {
+.filterBar_4Qm5zV.thin_tqapBM.scrollerBase_tqapBM {
   background: rgba(
     var(--rgb-background),
     1
   ) !important; /* Light glow background */
 }
-.filterBar__11877 {
+.filterBar_sO1rm5 {
   background: rgba(
     var(--rgb-background),
     1
   ) !important; /* Light glow background */
 }
-.shopScroll__1feb0.auto_d125d2.scrollerBase_d125d2 {
+.shopScroll_4Qm5zV.auto_tqapBM.scrollerBase_tqapBM {
   background: rgba(
     var(--rgb-background),
     1
   ) !important; /* Light glow background */
 }
 
-.mentioned__5126c {
+.mentioned_SY_P2T {
   background: rgba(
     var(--rgb-highlight),
     0.1
@@ -364,7 +364,7 @@ small {
     transition:
       left 0.25s ease-in-out,
       width 0.25s ease-in-out;
-    .guilds__5e434:hover ~ & {
+    .guilds_pog62O:hover ~ & {
       left: var(--custom-guild-list-width) !important;
       width: calc(100% - var(--custom-guild-list-width)) !important;
     }
