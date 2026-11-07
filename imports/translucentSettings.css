@@ -1,0 +1,64 @@
+/* translucent settings menu by benzeel V2 */
+/* ------ SETTINGS MENU START ------ */
+
+    /* settings menu scroll shadow */
+      .fixedContent_cR4ic2:after {
+        border-top-left-radius:  8px;
+        border-top-right-radius:  8px;
+      }
+    /* settings menu main BG */
+      .content_3Rvb29 {
+        background: #00000046;
+      }
+      .contentHeader_3Rvb29 {
+        background: transparent !important;
+      } 
+    /* Security Keys BG */
+      .credentialItem__6c75d {background: none;}
+      .credentialItem__6c75d:is(:first-child) {border:0px;}
+      .credentialList__6c75d {
+        background: #0c0c0c83; 
+        border-radius: 8px; 
+        border: 1px solid var(--border-subtle);
+      }
+    /* krisp bg */
+      .card_qCN-Ri:not(.outline__73069) {background: none}
+    /* keybinding bgs */
+      .defaultKeybindGroup_-wlZx4 {background: #2b2a2a63;}
+    /* vencord quick actions */
+      .vc-card-base {background: none;}
+      .vc-settings-quickActions-pill {background: #55555571;}
+      .vc-settings-quickActions-pill:hover {background: #7e7e7e71;}
+    /* Plugins */
+      .vc-addon-card {background: none;}
+    /* server boosts */
+      .appliedBoostContainer__4be27 {
+        background: none; 
+        border: 1px solid var(--border-subtle);
+      }
+      .guildContainer_f778dc {background: #3d3d3d52;}
+      .boostContainer__4be27 {background: #141414a1;}
+    /* server boost faq */
+      .wrapper__5b98e {background: #3d3d3d52;}
+    /* Share nitro */
+      .expandedProgressBarContainerSettingsPage_4kkZbu {
+        background: none;
+        backdrop-filter: none;
+      }
+    /* my account */
+      .accountProfileCard_a9178b {
+        background: #03030333; 
+        border: 1px solid var(--border-subtle);
+      }
+      .background_a9178b {
+        background: #1818183b; 
+        border: 1px solid var(--border-subtle);
+      }
+      .fieldList_a9178b {background: none;}
+    /* appearance */
+      .cardPrimary_qCN-Ri, .cardPrimary_qCN-Ri.editable__73069 {background: #03030356;}
+
+    /* "view reactions" popup & settings menu (for some reason)*/
+    .container_dvN-MP {background: #14141494; backdrop-filter: blur(10px);}
+
+/* ------ END OF SETTINGS MENU ------ */
