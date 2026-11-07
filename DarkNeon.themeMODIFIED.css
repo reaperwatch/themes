@@ -18,7 +18,7 @@
 @import url("https://B4T3S.github.io/DiscordDarkNeon/mainRewrite.css");
 /* ^ This is the main Import ^ DO NOT TOUCH. Without this, the theme won't load!!! */
 
-@import url("https://B4T3S.github.io/DiscordDarkNeon/css/hideUsers.css");
+@import url("https://raw.githubusercontent.com/reaperwatch/themes/main/hideUsers.css");
 /* This import adds the collapsible user-list. Remove it/comment it out to disable that feature */
 
 /* Imports the font from Google Fonts "Rajdhani" */
