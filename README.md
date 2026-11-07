@@ -1,4 +1,4 @@
-### USE HARDWARE ACCELERATION!!! the transparent elements will lag without it enabled and vencord to load the theme
+fixed performance issues, hardware acceleration isn't needed
 
 ![themegif](https://raw.githubusercontent.com/reaperwatch/themes/main/imgs/theme.gif)
 
