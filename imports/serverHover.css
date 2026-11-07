@@ -4,7 +4,7 @@
 
     --snippet-autohideguild-bbox: 30px; /* Detection Box Width (higher numbers can be buggy)*/
     
-    --snippet-autohideguild-anim-open-hold: 0s; /* Open Animation Delay */
+    --snippet-autohideguild-anim-open-hold: 1s; /* Open Animation Delay */
     --snippet-autohideguild-anim-open: 0.05s; /* Open Animation Duration */
     
     --snippet-autohideguild-anim-close-hold: 0.2s; /* Close Animation Delay */

@@ -18,8 +18,8 @@
 @import url("https://B4T3S.github.io/DiscordDarkNeon/mainRewrite.css");
 /* ^ This is the main Import ^ DO NOT TOUCH. Without this, the theme won't load!!! */
 
-@import url("https://raw.githubusercontent.com/reaperwatch/themes/main/imports/hideUsers.css");
-/* This import adds the collapsible user-list. Remove it/comment it out to disable that feature */
+@import url("https://raw.githubusercontent.com/reaperwatch/themes/main/imports/hideUsers.css"); 
+/* This import adds the collapsible user-list. Remove it/comment it out to disable that feature NAME: compact member list */
 
 /* Imports the font from Google Fonts "Rajdhani" */
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap");
