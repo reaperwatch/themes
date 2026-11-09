@@ -13,7 +13,7 @@
  * @MODIFIED by slashing__moon on discord!!! credits go to the original creator!!
 */
 
-@import url("https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css");
+@import "https://raw.githubusercontent.com/reaperwatch/themes/main/DarkNeon.themeMODIFIED.css";
 
 /* CUSTOMIZE COLORS AND FONTS IN HERE! */
 :root,
@@ -22,7 +22,7 @@
   --font-primary: "Rajdhani", sans-serif;
   --rgb-highlight: 76, 58, 112;
   --rgb-background: 16, 8, 20;
-  --rgb-text: 44, 33, 67;
+  --rgb-text: 173, 186, 199;
   --rgb-close-button: 235, 140, 200;
   --rgb-online-color: 181, 143, 255;
   --rgb-dnd-color: 245, 90, 90;
